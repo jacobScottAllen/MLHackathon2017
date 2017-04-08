@@ -29,7 +29,7 @@ clf.fit(X_train, y_train)
 val_pred = clf.predict(X_val)
 
 acc = accuracy_score(y_val, val_pred)
-print "Multiclass accuracy: {}".format(acc)
+print( "Multiclass accuracy: {}".format(acc))
 
 X_train = pd.concat([X_train, X_val])
 y_train = pd.concat([y_train, y_val])
