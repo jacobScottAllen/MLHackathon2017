@@ -23,7 +23,7 @@ X_train, X_val, y_train, y_val= train_test_split(X_train, y_train, test_size=0.3
 
 # Model fitting and Predictions
 # ------------------
-clf = RandomForestClassifier(n_estimators=100, random_state=1)
+clf = RandomForestClassifier(n_estimators=300, random_state=1)
 
 clf.fit(X_train, y_train)
 
